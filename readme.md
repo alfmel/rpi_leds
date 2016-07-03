@@ -8,5 +8,13 @@ my initial tinkering with a Raspberry Pi Zero to learn about the GPIO
 pins in Python.
 
 This project is divided into different parts, with each part building on
-each other. Each part has its own tag so you may easily view the code
+each other. Each part has its own branch so you may easily view the code
 for each part by doing `git checkout partX`.
+
+## Part 1
+
+In [Part 1](https://blogs.mypals.org/pi/post/Raspberry-Pi-GPIO-Programming-Part-1)
+(`git checkout part1`) I wrote a simple Python script to turn on an LED
+for 10 seconds. The pin number of the output GPIO is configurable via
+the `pinNumber` variable. The script also handles a keyboard interrupt
+(Ctrl-C).
