@@ -18,3 +18,14 @@ In [Part 1](https://blogs.mypals.org/pi/post/Raspberry-Pi-GPIO-Programming-Part-
 for 10 seconds. The pin number of the output GPIO is configurable via
 the `pinNumber` variable. The script also handles a keyboard interrupt
 (Ctrl-C).
+
+## Part 2
+
+In [Part 2](https://blogs.mypals.org/pi/post/raspberry-pi-gpio-programming-part-2)
+(`git checkout part2`) I wrote an LED sequence class that allows you to run an
+LED sequence asynchronously. Because the class instances are fully isolated,
+I can run more than one sequence at a time. And since I am no longer just
+writing sequential code, I can create unit tests to test my class. Testability
+is important since I can develop on my laptop, mock the GPIO library (since my
+laptop doesn't have GPIO pins) and I know my code will work once I transfer it
+to the Raspberry Pi.
